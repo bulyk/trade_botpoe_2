@@ -138,8 +138,8 @@ async def check_for_stop(message: types.Message):
                     search_tab = past_line.split('stash tab "')[1].split('"')[0]
                     position_x = int(past_line.split('left ')[1].split(',')[0])-1
                     position_y = int(past_line.split(', top ')[1].split(')')[0])-1
-                    number_tab = Stash.stesh_tabs(0, 0, search_tab)[0]
-                    quantity_all_tab = Stash.stesh_tabs(0, 0, search_tab)[1]
+                    number_tab = stash.stesh_tabs(0, 0, search_tab)[0]
+                    quantity_all_tab = stash.stesh_tabs(0, 0, search_tab)[1]
                     base_x = 39
                     base_y = 155
                     x_coord = base_x+position_x*52
